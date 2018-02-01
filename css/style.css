@@ -1,0 +1,188 @@
+/* =================================
+  Base Element Styles
+==================================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+p {
+	margin: 0 0;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ----general----*/
+
+.container {
+	display: block;
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+select {
+	height: 3em;
+}
+
+
+
+/* ----header----*/
+
+.header {
+	background-color: #34D1BF;
+	color:  white;
+	text-align: center;
+	text-transform: uppercase;
+	margin: auto;
+	height: 10vh;
+	line-height: 10vh;
+}
+
+.header > h1 {
+	vertical-align: middle;
+	font-size: 1.3em;
+}
+
+
+/* ----title banner----*/
+
+.title_banner {
+	text-align: center;
+	padding-top: 2em;
+	padding-bottom: 3px;
+	border-bottom: solid 1px black;
+}
+.title_banner:after {
+	content:"";
+	display: block;
+	border-bottom: solid 3px black;
+	padding-bottom: 2em;
+}
+
+.title_banner > h2 {
+	font-size: 1.2em;
+	font-weight: 800;
+	padding-bottom: .7em;
+}
+
+.title_banner > p {
+	font-weight: 100;
+	font-size: .8em;
+}
+
+/* ----Main-general----*/
+
+input[type="email"],
+input[type="text"],
+input[type="tel"],
+textarea,
+select {
+	background-color: #F1F1F1;
+	border: none;
+	border-radius: 0.2em;
+	line-height: 3em;
+	width: 100%;
+	padding-left: 20px;
+	padding-right: 20px;
+	transition: background-color 0.3s ease
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+	outline: none;
+}
+
+input:focus {
+	background-color: #FFF2DD;
+}
+
+
+fieldset {
+	display: flex;
+	border: none;
+	padding: 0;
+}
+
+legend {
+	font-weight: 800;
+	font-size: 1.3em;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+}
+
+label {
+	padding-top: 1.3em;
+	padding-bottom: 0.5em;
+}
+
+/* ----Contact----*/
+
+.contact {
+	border-bottom: solid 2px black;
+	padding-bottom: 3em;
+}
+
+
+input::-webkit-input-placeholder {
+	text-align: right;
+}
+
+select:invalid {
+	color: gray;
+}
+
+/* ----Newsletter----*/
+
+.newsletter {
+	display: inline;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	margin-right: 1.5em;
+	margin-bottom: 1em;
+	outline: none;
+}
+
+.newsletter > p {
+	margin-bottom: 1em;
+	font-size: 0.9em;
+	font-weight: 600;
+}
+
+.newsletter > p:nth-of-type(1n+2){
+	margin-top: 2em;
+}
+/* ----Submit Button----*/
+	button {
+		background-color: #FFBA49;
+		color: white;
+		border: none;
+		border-radius: .2em;
+		width: 100%;
+		line-height: 4em;
+		margin-bottom: 2em;
+		margin-top: 2em;
+	}
+/* ----Footer----*/
+
+footer {
+	background-color: #34D1BF;
+	color: #fff;
+	line-height: 3.5em;
+	text-align: center;
+}
+
+/* =================================
+  Media queries
+==================================== */

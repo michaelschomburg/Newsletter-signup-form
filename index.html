@@ -1,13 +1,94 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title></title>
+		<title>The Code Review</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400,500,700" rel="stylesheet">
+
 	</head>
 	<body>
-		content goes here!
+		<header id="header" class="header">
+			<h1>the code review</h1>
+		</header>
+
+		<!-- /header -->
+
+
+		<main class="container">
+
+			<div class="title_banner">
+				<h2>Signup for our newsletter</h2>
+				<p>Get the latest news on how your code is doing right in your inbox</p>
+			</div>
+		<!-- /title banner -->
+			<form action="index.html" method="get">
+
+				<fieldset class="contact">
+					<legend>Contact Information</legend>
+
+					<label for="name">Full Name</label>
+					<input type="text" id="name" name="user_name" placeholder="required" required>
+
+					<label for="email">Email Address</label>
+					<input type="email" id="email" name="user_email" placeholder="required" required>
+
+					<label for="phone">Phone Number</label>
+					<input type="tel" id="phone" name="user_phone" placeholder="e.g. 0615128738">
+
+					<label for="street">Street Address</label>
+					<input type="text" id="street" name="street_address" placeholder="e.g. Prins Hendrikplein">
+
+					<label>City</label>
+					<input type="text" name="city" placeholder="e.g. Amsterdam">
+
+					<label for="state">State</label>
+					<select id="state" name="user_state" required>
+						<option value="" selected>Choose State</option>
+						<option value="State 1">State 1</option>
+						<option value="State 2">State 2</option>
+						<option value="State 3">State 3</option>
+						<option value="State 4">State 4</option>
+						<option value="State 5">State 5</option>
+						<option value="State 6">State 6</option>
+					</select>
+
+					<label for="zip">Zip Code</label>
+					<input type="text" id="zip" name="city" placeholder="e.g. 2516MD">
+
+				</fieldset>
+			<!-- /contact -->
+				<fieldset class="newsletter">
+
+					<legend>Newsletter</legend>
+
+					<p>Select the newsletters you would like to recieve</p>
+					<input type="checkbox" id="html" name="newsletter" value="html"><label for="html">HTML News</label><br>
+					<input type="checkbox" id="css" name="newsletter" value="css"><label for="css">CSS News</label><br>
+					<input type="checkbox" id="js" name="newsletter" value="JavaScript"><label for="js">JavaScript News</label><br>
+
+
+					<p>Newsletter format</p>
+					<input type="radio" id="html_radio" name="format" value="html"><label for="html_radio" class="radio">HTML</label><br>
+					<input type="radio" id="plain_radio" name="format" value="text"><label for="plain_radio" class="radio">Plain text</label><br>
+
+
+					<p for="other">Other topics you'd like to hear about</p>
+					<textarea id="other" name="other"></textarea>
+
+				</fieldset>
+			<!-- /Newsletter -->
+
+			<button type="submit">Sign Up</button>
+			<!-- /sign up -->
+			</form>
+		</main>
+		<!-- /main container -->
+
+		<footer>
+			<p>&copy; The Code Review</p>
+		</footer>
 	<body>
 </html>
