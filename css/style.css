@@ -104,6 +104,7 @@ textarea:focus {
 
 input:focus {
 	background-color: #FFF2DD;
+	border: none;
 }
 
 
@@ -186,3 +187,42 @@ footer {
 /* =================================
   Media queries
 ==================================== */
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 70%;
+	}
+
+	.wrap {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.wrap > input,
+	.wrap > label,
+	.wrap > select {
+		margin-top: 1.3em;
+		margin-bottom: 0.5em;
+	}
+
+	.wrap > input,
+	.wrap > select {
+		width: 60%;
+	}
+
+
+	.wrap > label {
+		width: 40%;
+	}
+
+	input[placeholder="2516MD"] {
+		max-width: 7em;
+	}
+
+	input[type="email"],
+	input[type="text"],
+	input[type="tel"],
+	textarea,
+	select {
+		border-radius: 0.4em;
+	}
+}

@@ -28,36 +28,36 @@
 
 				<fieldset class="contact">
 					<legend>Contact Information</legend>
+					<div class="wrap">
+						<label for="name">Full Name</label>
+						<input type="text" id="name" name="user_name" placeholder="required" required>
 
-					<label for="name">Full Name</label>
-					<input type="text" id="name" name="user_name" placeholder="required" required>
+						<label for="email">Email Address</label>
+						<input type="email" id="email" name="user_email" placeholder="required" required>
 
-					<label for="email">Email Address</label>
-					<input type="email" id="email" name="user_email" placeholder="required" required>
+						<label for="phone">Phone Number</label>
+						<input type="tel" id="phone" name="user_phone" placeholder="e.g. 0615128738">
 
-					<label for="phone">Phone Number</label>
-					<input type="tel" id="phone" name="user_phone" placeholder="e.g. 0615128738">
+						<label for="street">Street Address</label>
+						<input type="text" id="street" name="street_address" placeholder="e.g. Prins Hendrikplein">
 
-					<label for="street">Street Address</label>
-					<input type="text" id="street" name="street_address" placeholder="e.g. Prins Hendrikplein">
+						<label>City</label>
+						<input type="text" name="city" placeholder="e.g. Amsterdam">
 
-					<label>City</label>
-					<input type="text" name="city" placeholder="e.g. Amsterdam">
+						<label for="state">State</label>
+						<select id="state" name="user_state" required>
+							<option value="" selected>Choose State</option>
+							<option value="State 1">State 1</option>
+							<option value="State 2">State 2</option>
+							<option value="State 3">State 3</option>
+							<option value="State 4">State 4</option>
+							<option value="State 5">State 5</option>
+							<option value="State 6">State 6</option>
+						</select>
 
-					<label for="state">State</label>
-					<select id="state" name="user_state" required>
-						<option value="" selected>Choose State</option>
-						<option value="State 1">State 1</option>
-						<option value="State 2">State 2</option>
-						<option value="State 3">State 3</option>
-						<option value="State 4">State 4</option>
-						<option value="State 5">State 5</option>
-						<option value="State 6">State 6</option>
-					</select>
-
-					<label for="zip">Zip Code</label>
-					<input type="text" id="zip" name="city" placeholder="e.g. 2516MD">
-
+						<label for="zip">Zip Code</label>
+						<input type="text" id="zip" name="city" placeholder="2516MD">
+					</div>
 				</fieldset>
 			<!-- /contact -->
 				<fieldset class="newsletter">
@@ -75,7 +75,7 @@
 					<input type="radio" id="plain_radio" name="format" value="text"><label for="plain_radio" class="radio">Plain text</label><br>
 
 
-					<p for="other">Other topics you'd like to hear about</p>
+					<p>Other topics you'd like to hear about</p>
 					<textarea id="other" name="other"></textarea>
 
 				</fieldset>
@@ -90,5 +90,5 @@
 		<footer>
 			<p>&copy; The Code Review</p>
 		</footer>
-	<body>
+	</body>
 </html>
