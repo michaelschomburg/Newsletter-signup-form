@@ -209,6 +209,11 @@ footer {
 		width: 60%;
 	}
 
+	textarea {
+		height: 5em;
+		line-height: initial;
+	}
+
 
 	.wrap > label {
 		width: 40%;
